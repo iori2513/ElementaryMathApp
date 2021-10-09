@@ -19,6 +19,10 @@ class DirectionModel{
         self.answer = answer
     }
 }
+
+
+
+
 // 問題１
     let direction_1 = DirectionModel(id: 1,
                                      problem: "A君とB君の所持金の合計は10000円でA君はB君よりも1500円多く持っています。B君の所持金はいくらでしょう。",
