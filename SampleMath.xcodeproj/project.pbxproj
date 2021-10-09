@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,14 +16,6 @@
 		765455542701A13800C7E032 /* ProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765455532701A13800C7E032 /* ProblemViewController.swift */; };
 		765455562701A33F00C7E032 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765455552701A33F00C7E032 /* AnswerViewController.swift */; };
 		767BEE7F270ED7F300775276 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE7E270ED7F300775276 /* AdSupport.framework */; };
-		767BEE81270ED7FC00775276 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE80270ED7FC00775276 /* AudioToolbox.framework */; };
-		767BEE83270ED82100775276 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE82270ED82100775276 /* AVFoundation.framework */; };
-		767BEE85270ED85A00775276 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE84270ED85A00775276 /* CoreTelephony.framework */; };
-		767BEE87270ED86800775276 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE86270ED86800775276 /* EventKit.framework */; };
-		767BEE89270ED87100775276 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE88270ED87100775276 /* EventKitUI.framework */; };
-		767BEE8B270ED88500775276 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE8A270ED88500775276 /* MessageUI.framework */; };
-		767BEE8D270ED88D00775276 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE8C270ED88D00775276 /* StoreKit.framework */; };
-		767BEE8F270ED89700775276 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE8E270ED89700775276 /* SystemConfiguration.framework */; };
 		767BEE90270EE69000775276 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE69270ED2DE00775276 /* GoogleAppMeasurement.xcframework */; };
 		767BEE93270EE69400775276 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766259E12708CB470036F8F5 /* GoogleMobileAds.xcframework */; };
 		767BEE95270F003600775276 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE6D270ED2E800775276 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
@@ -88,19 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				767BEE89270ED87100775276 /* EventKitUI.framework in Frameworks */,
 				767BEE95270F003600775276 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
-				767BEE87270ED86800775276 /* EventKit.framework in Frameworks */,
-				767BEE83270ED82100775276 /* AVFoundation.framework in Frameworks */,
 				767BEE7F270ED7F300775276 /* AdSupport.framework in Frameworks */,
-				767BEE8F270ED89700775276 /* SystemConfiguration.framework in Frameworks */,
 				767BEE98270F005E00775276 /* UserMessagingPlatform.xcframework in Frameworks */,
-				767BEE85270ED85A00775276 /* CoreTelephony.framework in Frameworks */,
-				767BEE8D270ED88D00775276 /* StoreKit.framework in Frameworks */,
 				767BEE93270EE69400775276 /* GoogleMobileAds.xcframework in Frameworks */,
 				767BEE90270EE69000775276 /* GoogleAppMeasurement.xcframework in Frameworks */,
-				767BEE81270ED7FC00775276 /* AudioToolbox.framework in Frameworks */,
-				767BEE8B270ED88500775276 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +199,7 @@
 				};
 			};
 			buildConfigurationList = 7654553727019E6000C7E032 /* Build configuration list for PBXProject "SampleMath" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -358,7 +342,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Iori Nakata (48WF4HC6TB)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -381,6 +366,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = IN;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -420,7 +406,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Iori Nakata (48WF4HC6TB)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -436,6 +423,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = IN;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -449,7 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Iori Nakata (48WF4HC6TB)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48WF4HC6TB;
 				INFOPLIST_FILE = SampleMath/Info.plist;
@@ -469,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Iori Nakata (48WF4HC6TB)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48WF4HC6TB;
 				INFOPLIST_FILE = SampleMath/Info.plist;
