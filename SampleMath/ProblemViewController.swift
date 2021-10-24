@@ -26,12 +26,17 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         UserAnswerText.delegate = self
+        
+        // 問題数
         questionCount += 1
         ProblemNumberLabel.text = "第\(questionCount)問"
+        
+        // 問題、解答、ユーザーの回答の設定
         var direction = directionList.randomElement()
         answer = direction!.answer
         ProblemText.text = direction?.problem
         UserAnswerText.placeholder = "答えを入力してください"
+        // 広告の追加
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         bannerView.adUnitID = "ca-app-pub-9481353025497177/7057784901"
         bannerView.rootViewController = self
@@ -41,13 +46,14 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    // 変数の引き継ぎ
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let AnswerVC = segue.destination as! AnswerViewController
         AnswerVC.AnswerVCAnswer = answer
         AnswerVC.AnswerVCQCount = questionCount 
     }
     
-    
+    // 『次の問題へ』ボタンを押した時の処理
     @IBAction func btnAction(sender: UIButton){
         if sender.tag == 2 {
             nextDirection()
@@ -56,7 +62,9 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
     
         
     
-
+    
+    
+    // 次の問題に向かう処理
     func nextDirection() {
         questionCount += 1
         UserAnswerText.tag = 0
@@ -69,6 +77,8 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
         ProblemText.text = direction?.problem
         UserAnswerText.placeholder = "答えを入力してください"
         
+        
+        // 広告の追加
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         bannerView.adUnitID = "ca-app-pub-9481353025497177/7057784901"
         bannerView.rootViewController = self
@@ -76,7 +86,7 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
         addBannerViewToView(bannerView)
     }
     
-    
+    // 正誤判定
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if UserAnswerText.text ==  answer {
                 CorrectIncorrect.text = "正解　◯"
@@ -87,10 +97,12 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    // 『トップに戻る』ボタンを押した際の処理
     @IBAction func toTopButtonAction(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
     }
     
+    // 広告の詳細設定
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
@@ -111,6 +123,8 @@ class ProblemViewController: UIViewController, UITextFieldDelegate {
                                 constant: 0)
             ])
     }
+    
+    
     /*
     // MARK: - Navigation
 

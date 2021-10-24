@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7620A5E4271201A70033D443 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7620A5E3271201A70033D443 /* GoogleUtilities.framework */; };
+		7620A5E7271201B30033D443 /* Pods_SampleMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7620A5E6271201B30033D443 /* Pods_SampleMath.framework */; };
 		7654554027019E6000C7E032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654553F27019E6000C7E032 /* AppDelegate.swift */; };
 		7654554227019E6000C7E032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654554127019E6000C7E032 /* SceneDelegate.swift */; };
 		7654554427019E6000C7E032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654554327019E6000C7E032 /* ViewController.swift */; };
@@ -15,34 +17,20 @@
 		7654554C27019E6300C7E032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7654554A27019E6300C7E032 /* LaunchScreen.storyboard */; };
 		765455542701A13800C7E032 /* ProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765455532701A13800C7E032 /* ProblemViewController.swift */; };
 		765455562701A33F00C7E032 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765455552701A33F00C7E032 /* AnswerViewController.swift */; };
-		767BEE7F270ED7F300775276 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE7E270ED7F300775276 /* AdSupport.framework */; };
 		767BEE90270EE69000775276 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE69270ED2DE00775276 /* GoogleAppMeasurement.xcframework */; };
 		767BEE93270EE69400775276 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766259E12708CB470036F8F5 /* GoogleMobileAds.xcframework */; };
 		767BEE95270F003600775276 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE6D270ED2E800775276 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		767BEE98270F005E00775276 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE70270ED32E00775276 /* UserMessagingPlatform.xcframework */; };
-		767BEE99270F005E00775276 /* UserMessagingPlatform.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 767BEE70270ED32E00775276 /* UserMessagingPlatform.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		769BDD782701D04600155AA0 /* direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BDD772701D04500155AA0 /* direction.swift */; };
 		76BFBB0B270DD8BB0033079E /* Math-logo in Resources */ = {isa = PBXBuildFile; fileRef = 76BFBB0A270DD8BA0033079E /* Math-logo */; };
 		76ECE451270DC00400DD9A09 /* Math-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 76ECE450270DC00300DD9A09 /* Math-logo.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		767BEE9A270F005E00775276 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				767BEE99270F005E00775276 /* UserMessagingPlatform.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		2EC72BCA9978B8E5CBD26D96 /* Pods-SampleMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleMath.release.xcconfig"; path = "Target Support Files/Pods-SampleMath/Pods-SampleMath.release.xcconfig"; sourceTree = "<group>"; };
 		56AD531D088EAFC69B280607 /* Pods_SampleMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7620A5E3271201A70033D443 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7620A5E6271201B30033D443 /* Pods_SampleMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SampleMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7654553C27019E6000C7E032 /* SampleMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7654553F27019E6000C7E032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7654554127019E6000C7E032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7620A5E4271201A70033D443 /* GoogleUtilities.framework in Frameworks */,
 				767BEE95270F003600775276 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
-				767BEE7F270ED7F300775276 /* AdSupport.framework in Frameworks */,
+				7620A5E7271201B30033D443 /* Pods_SampleMath.framework in Frameworks */,
 				767BEE98270F005E00775276 /* UserMessagingPlatform.xcframework in Frameworks */,
 				767BEE93270EE69400775276 /* GoogleMobileAds.xcframework in Frameworks */,
 				767BEE90270EE69000775276 /* GoogleAppMeasurement.xcframework in Frameworks */,
@@ -131,6 +120,8 @@
 		A1CEC29658AC20EA5C070E67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7620A5E6271201B30033D443 /* Pods_SampleMath.framework */,
+				7620A5E3271201A70033D443 /* GoogleUtilities.framework */,
 				767BEE8E270ED89700775276 /* SystemConfiguration.framework */,
 				767BEE8C270ED88D00775276 /* StoreKit.framework */,
 				767BEE8A270ED88500775276 /* MessageUI.framework */,
@@ -173,7 +164,6 @@
 				7654553927019E6000C7E032 /* Frameworks */,
 				7654553A27019E6000C7E032 /* Resources */,
 				F13FB6D03E5499062D479B78 /* [CP] Embed Pods Frameworks */,
-				767BEE9A270F005E00775276 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -439,9 +429,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Iori Nakata (48WF4HC6TB)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.01;
 				DEVELOPMENT_TEAM = 48WF4HC6TB;
 				INFOPLIST_FILE = SampleMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.osanawa.MathElementary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = IN;
@@ -459,9 +451,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Iori Nakata (48WF4HC6TB)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.01;
 				DEVELOPMENT_TEAM = 48WF4HC6TB;
 				INFOPLIST_FILE = SampleMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.osanawa.MathElementary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = IN;
